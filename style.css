@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --color-principal: rgb(102, 53, 13);
+    --color-principal_2: rgb(177, 136, 103);
+
+    --color-fondo: #fad0bf;
+
+    --color-cards: #e4bbab;
+
+    --fuente-titulos: 'Indie Flower', cursive;
+
+    --fuente-texto: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--fuente-texto);
+
+    color: var(--color-principal);
+
+    
+}
+
+body {
+    background-color: var(--color-fondo);
+    max-width: 1280px;
+    /* min-width: 50%; */
+    
+    /* margin: 25px 25px; */
+    margin:  auto;
+    padding: 25px;
+
+    justify-content: center;
+    
+}
+
+header {
+    background-color: var(--color-cards);
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--color-cards);
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+section {
+    padding-top: 35px;
+}
+
+h1  {
+    font-family: var(--fuente-titulos);
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-cards);
+    font-family: var(--fuente-titulos);
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-bottom: 25px;
+    transform: translate(0,15px);
+}
+
+h2  {
+    color: var(--color-cards);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+/* #chocolate {
+    max-width: 100%;
+    min-width: 50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+} */
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.subtitle {
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2rem;  
+    text-align: justify; 
+}
+
+.container {
+    /* max-width: 90vw; */
+    /* margin-top: 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-cards);
+    border-radius: 5px;
+    padding: 15px 0;
+
+}
+
+.video-content {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 95%;
+    height: 450px;
+}
+
+.image-content {
+    /* margin-top: 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* max-width: 75vw; */
+    max-width: 100%;
+    /* min-width: 50vw; */
+}
+
+li {
+    padding: 7px 9px;
+    text-align: justify;
+}
+
+li:nth-child(odd) {
+    background-color: var(--color-cards);
+    border-radius: 5px;
+    padding: auto;
+    list-style-position: inside;
+    
+}
+
+li:nth-child(even) {
+    /* background-color: var(--color-cards); */
+    border-radius: 5px;
+    padding: auto;
+    list-style-position: inside;
+    
+}
+
+footer label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 700;
+    /* text-align: center; */
+    font-size: 1.2rem; 
+}
+
+footer input {
+    width: 100%;
+    margin-bottom: 9px;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-weight: 900;
+}
+
+
+footer input::placeholder{
+    color: var(--color-principal_2);
+  }
+
+
+
+footer textarea {
+    width: 100%;
+    margin-bottom: 9px;
+    background-color: var(--color-fondo);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    resize: none;
+}
+
+footer button {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem; 
+    color: var(--color-cards);
+    width: 90px;
+    /* margin-bottom: 9px; */
+    margin: auto;
+    background-color: var(--color-principal);
+    border: none;
+    padding: 9px 9px;
+    border-radius: 5px;
+}
